@@ -57,8 +57,6 @@
         // });
 
         $(document).ready(function(){
-
-
             $('.dynamic').change(function(){
 
                 if($(this).val() != '')
@@ -78,7 +76,6 @@
                             console.log(result);
                             $('#'+dependent).html(result);
                         }
-
                     })
                 }
             });
@@ -87,12 +84,10 @@
                 $('#year').val('');
                 $('#semester').val('');
                 $('#subject').val('');
-
             });
 
             $('#year').change(function(){
                 $('#semester').val('');
-
             });
 
             $('#semester').change(function(){
@@ -100,7 +95,6 @@
             });
 
         });
-
     </script>
 @endsection
 
